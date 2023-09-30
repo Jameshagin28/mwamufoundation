@@ -1,0 +1,439 @@
+                                                                                                @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+                                                                                            * {
+                                                                                                margin: 0;
+                                                                                                padding: 0;
+                                                                                                box-sizing: border-box;
+                                                                                            }
+                                                                                            
+                                                                                            body {
+                                                                                                margin: 0;
+                                                                                                font-family: 'Poppins', sans-serif;
+                                                                                                font-weight: 200;
+                                                                                                line-height: 1.3;
+                                                                                            }
+                                                                                            
+                                                                                            a,
+                                                                                            a:hover {
+                                                                                                text-decoration: none;
+                                                                                            }
+                                                                                            
+                                                                                            .top-bar {
+                                                                                                display: flex;
+                                                                                                align-items: center;
+                                                                                                justify-content: space-between;
+                                                                                                padding: 10px 25px;
+                                                                                                background: #445522;
+                                                                                                color: #fff;
+                                                                                                /* Add text color for the top bar */
+                                                                                            }
+                                                                                            
+                                                                                            .top-bar ul {
+                                                                                                list-style: none;
+                                                                                                display: flex;
+                                                                                            }
+                                                                                            
+                                                                                            .top-bar li {
+                                                                                                margin: 0px 5px;
+                                                                                            }
+                                                                                            
+                                                                                            .top-bar a {
+                                                                                                color: #fff;
+                                                                                            }
+                                                                                            
+                                                                                            .top-bar a:hover {
+                                                                                                color: #2222;
+                                                                                            }
+                                                                                            /* Adjustments and improvements for your navigation */
+                                                                                            
+                                                                                            nav {
+                                                                                                background: white;
+                                                                                                padding: 10px 20px;
+                                                                                                /* Increase padding for better spacing */
+                                                                                                display: flex;
+                                                                                                align-items: center;
+                                                                                                justify-content: space-between;
+                                                                                                position: fixed;
+                                                                                                /* To make the navigation bar stay fixed at the top */
+                                                                                                top: 0;
+                                                                                                left: 0;
+                                                                                                right: 0;
+                                                                                                z-index: 3;
+                                                                                            }
+                                                                                            
+                                                                                            nav a {
+                                                                                                color: #333;
+                                                                                                /* Use a more readable color for links on a white background */
+                                                                                                text-decoration: none;
+                                                                                                /* Remove underlines from links */
+                                                                                                margin: 0 15px;
+                                                                                                /* Adjust spacing between links */
+                                                                                                transition: color 0.3s ease;
+                                                                                                /* Add a smooth color transition on hover */
+                                                                                            }
+                                                                                            
+                                                                                            nav a:hover {
+                                                                                                color: aqua;
+                                                                                            }
+                                                                                            
+                                                                                            .logo {
+                                                                                                flex: 1;
+                                                                                                display: flex;
+                                                                                                align-items: center;
+                                                                                                font-size: 1.5rem;
+                                                                                                /* Slightly reduce font size for better scaling */
+                                                                                            }
+                                                                                            
+                                                                                            .logo img {
+                                                                                                max-width: 100%;
+                                                                                                /* Ensure the logo image stays within its container */
+                                                                                                height: auto;
+                                                                                            }
+                                                                                            
+                                                                                            .menu {
+                                                                                                list-style: none;
+                                                                                                display: flex;
+                                                                                                align-items: center;
+                                                                                                margin: 0;
+                                                                                                /* Remove default margin for list items */
+                                                                                                padding: 0;
+                                                                                                /* Remove default padding for list items */
+                                                                                            }
+                                                                                            
+                                                                                            .menu li {
+                                                                                                margin-right: 20px;
+                                                                                                /* Adjust margin for spacing between menu items */
+                                                                                                font-size: 1rem;
+                                                                                                /* Increase font size for better visibility */
+                                                                                            }
+                                                                                            
+                                                                                            .toggle {
+                                                                                                font-size: 1.9rem;
+                                                                                                display: flex;
+                                                                                                align-items: center;
+                                                                                                /* Center the icon vertically */
+                                                                                                cursor: pointer;
+                                                                                                /* Add cursor style */
+                                                                                            }
+                                                                                            
+                                                                                            @media screen and (max-width: 500px) {
+                                                                                                nav {
+                                                                                                    display: block;
+                                                                                                    position: relative;
+                                                                                                    padding: 15px 20px;
+                                                                                                    z-index: 999;
+                                                                                                }
+                                                                                                .menu {
+                                                                                                    margin-top: 15px;
+                                                                                                    display: none;
+                                                                                                    flex-direction: column;
+                                                                                                    /* Stack items vertically on small screens */
+                                                                                                    position: absolute;
+                                                                                                    /* Position the menu absolutely */
+                                                                                                    background: rgba(2, 0, 0, 0.746);
+                                                                                                    /* Background color for the mobile menu */
+                                                                                                    top: 134px;
+                                                                                                    /* Adjust the distance from the top */
+                                                                                                    right: 0;
+                                                                                                    /* Position the menu on the right */
+                                                                                                    width: 100%;
+                                                                                                    /* Make the menu full-width */
+                                                                                                }
+                                                                                                .menu.active {
+                                                                                                    display: flex;
+                                                                                                }
+                                                                                                .toggle {
+                                                                                                    display: block;
+                                                                                                    width: 100%;
+                                                                                                    /* Make the menu full-width */
+                                                                                                    z-index: 999;
+                                                                                                }
+                                                                                                .menu.active {
+                                                                                                    display: flex;
+                                                                                                }
+                                                                                                .toggle {
+                                                                                                    display: block;
+                                                                                                }
+                                                                                                /*carousel starts here #############################*/
+                                                                                                .carousel {
+                                                                                                    position: relative;
+                                                                                                    height: 680px;
+                                                                                                    width: 89%;
+                                                                                                    margin: 0 auto;
+                                                                                                }
+                                                                                                .carousel__image {
+                                                                                                    width: 100%;
+                                                                                                    height: 100%;
+                                                                                                    object-fit: cover;
+                                                                                                }
+                                                                                                .carousel__track-container {
+                                                                                                    background: lightgreen;
+                                                                                                    height: 100%;
+                                                                                                    position: relative;
+                                                                                                    overflow: hidden;
+                                                                                                }
+                                                                                                .carousel__track {
+                                                                                                    padding: 0;
+                                                                                                    margin: 0;
+                                                                                                    list-style: none;
+                                                                                                    position: relative;
+                                                                                                    height: 100%;
+                                                                                                    transition: transform 250ms ease-in;
+                                                                                                }
+                                                                                                .carousel__slide {
+                                                                                                    position: absolute;
+                                                                                                    top: 0;
+                                                                                                    bottom: 0;
+                                                                                                    width: 100%;
+                                                                                                }
+                                                                                                .carousel__button {
+                                                                                                    position: absolute;
+                                                                                                    top: 50%;
+                                                                                                    transform: translate(-50%);
+                                                                                                    background: transparent;
+                                                                                                    border: 0;
+                                                                                                    cursor: pointer;
+                                                                                                }
+                                                                                                .carousel__button--left {
+                                                                                                    left: -40px;
+                                                                                                    z-index: 150;
+                                                                                                }
+                                                                                                .carousel__button--right {
+                                                                                                    right: -40px;
+                                                                                                }
+                                                                                                .carousel__button img {
+                                                                                                    width: 12px;
+                                                                                                }
+                                                                                                .carousel__nav {
+                                                                                                    display: flex;
+                                                                                                    justify-content: center;
+                                                                                                    padding: 10px 0;
+                                                                                                }
+                                                                                                .carousel__indicator {
+                                                                                                    border: 0;
+                                                                                                    border-radius: 50%;
+                                                                                                    width: 15px;
+                                                                                                    height: 15px;
+                                                                                                    background: black;
+                                                                                                    background: rgba(0, 0, 0, .3);
+                                                                                                    margin: 0 12px;
+                                                                                                    cursor: pointer;
+                                                                                                }
+                                                                                                .carousel__indicator .current-slide {
+                                                                                                    background: rgba(0, 0, 0, .75);
+                                                                                                }
+                                                                                                .is_hidden {
+                                                                                                    display: none;
+                                                                                                }
+                                                                                                /*FIRST HEADING-----------------------------------*/
+                                                                                                /*52:14*/
+                                                                                                /*second section########################starts here*/
+                                                                                                .section-container {
+                                                                                                    display: flex;
+                                                                                                    justify-content: space-between;
+                                                                                                    align-items: center;
+                                                                                                    padding: 2rem;
+                                                                                                    background-color: #f0f0f0;
+                                                                                                    outline: thick solid gold;
+                                                                                                    width: 99%;
+                                                                                                    margin-top: 5%;
+                                                                                                }
+                                                                                                /* Style for the text column */
+                                                                                                .text-column {
+                                                                                                    flex: 1;
+                                                                                                    padding: 1rem;
+                                                                                                }
+                                                                                                /* Style for the image with transition */
+                                                                                                .image-column {
+                                                                                                    flex: 1;
+                                                                                                    position: relative;
+                                                                                                    overflow: hidden;
+                                                                                                    transition: transform 0.3s ease-in-out;
+                                                                                                    display: grid;
+                                                                                                }
+                                                                                                .image-column img {
+                                                                                                    width: 80%;
+                                                                                                    height: auto;
+                                                                                                    transition: transform 0.3s ease-in-out;
+                                                                                                }
+                                                                                                /* Hover effect for the image */
+                                                                                                .image-column:hover {
+                                                                                                    transform: scale(1.1);
+                                                                                                }
+                                                                                                /* Additional styles for text */
+                                                                                                .section-title {
+                                                                                                    font-size: 3em;
+                                                                                                    margin-bottom: 10px;
+                                                                                                    position: relative;
+                                                                                                    background-image: linear-gradient(gold, gold);
+                                                                                                    background-size: 100% 10px;
+                                                                                                    background-repeat: no-repeat;
+                                                                                                    background-position: 100% 0%;
+                                                                                                    transition: background-size .7s, background-position .5s ease-in-out;
+                                                                                                }
+                                                                                                .section-title:hover {
+                                                                                                    background-size: 100% 80%;
+                                                                                                    background-position: 0% 100%;
+                                                                                                    transition: background-position .7s, background-size .5s ease-in-out;
+                                                                                                }
+                                                                                                .section-text {
+                                                                                                    font-size: 16px;
+                                                                                                }
+                                                                                                .textcontainer {
+                                                                                                    display: grid;
+                                                                                                    grid-template-columns: repeat(2, 1fr);
+                                                                                                    /* Two columns with equal width */
+                                                                                                    gap: 20px;
+                                                                                                    /* Adjust the gap between grid items as needed */
+                                                                                                    align-items: center;
+                                                                                                }
+                                                                                                @media (max-width: 768px) {
+                                                                                                    /* Change flex direction to column for smaller screens */
+                                                                                                    .section-container {
+                                                                                                        flex-direction: column;
+                                                                                                        align-items: center;
+                                                                                                    }
+                                                                                                    /* Reset flex properties for text and image columns */
+                                                                                                    .text-column {
+                                                                                                        flex: none;
+                                                                                                        /* Remove flex property */
+                                                                                                        padding: 3rem;
+                                                                                                    }
+                                                                                                    .image-column {
+                                                                                                        flex: none;
+                                                                                                        /* Remove flex property */
+                                                                                                        position: relative;
+                                                                                                        overflow: hidden;
+                                                                                                        display: block;
+                                                                                                        /* Change to block display */
+                                                                                                        margin-top: 20px;
+                                                                                                        /* Add margin to create space between text and image */
+                                                                                                    }
+                                                                                                }
+                                                                                                /*our values section###########################################*/
+                                                                                                /*services section*/
+                                                                                                .service__container {
+                                                                                                    width: 80%;
+                                                                                                    height: auto;
+                                                                                                    margin-top: 5%;
+                                                                                                    outline: 2px solid black;
+                                                                                                    margin: 30vh auto 0;
+                                                                                                    position: relative;
+                                                                                                }
+                                                                                                .service__container h1 {
+                                                                                                    text-align: center;
+                                                                                                    padding: 10%;
+                                                                                                    margin-bottom: 60px;
+                                                                                                    font-weight: 600;
+                                                                                                    position: relative;
+                                                                                                }
+                                                                                                .service__container h1::after {
+                                                                                                    content: '';
+                                                                                                    background: #303ef7;
+                                                                                                    width: 100px;
+                                                                                                    height: 5px;
+                                                                                                    position: absolute;
+                                                                                                    bottom: -5px;
+                                                                                                    left: 50%;
+                                                                                                    transform: translate(-50%);
+                                                                                                }
+                                                                                                .row {
+                                                                                                    display: grid;
+                                                                                                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                                                                                                    grid-gap: 20px;
+                                                                                                }
+                                                                                                .service {
+                                                                                                    text-align: center;
+                                                                                                    padding: 25px 10px;
+                                                                                                    padding: 25px 10px;
+                                                                                                    border-radius: 5px;
+                                                                                                    font-size: 13px;
+                                                                                                    background: transparent;
+                                                                                                    cursor: pointer;
+                                                                                                    transition: transform 0.5s, background 0.5s;
+                                                                                                }
+                                                                                                .service i {
+                                                                                                    font-size: 40px;
+                                                                                                    margin-bottom: 10px;
+                                                                                                    color: yellow;
+                                                                                                }
+                                                                                                .service h2 {
+                                                                                                    font-weight: 600;
+                                                                                                    margin-bottom: 8px;
+                                                                                                }
+                                                                                                .service:hover {
+                                                                                                    background: #303ef7;
+                                                                                                    color: #fff;
+                                                                                                    transform: scale(1.05);
+                                                                                                }
+                                                                                                @media (max-width: 768px) {
+                                                                                                    .service__container {
+                                                                                                        width: 90%;
+                                                                                                        /* Adjust width for smaller screens */
+                                                                                                    }
+                                                                                                    .service__container h1 {
+                                                                                                        font-size: 24px;
+                                                                                                        /* Adjust font size for smaller screens */
+                                                                                                    }
+                                                                                                    .service {
+                                                                                                        font-size: 14px;
+                                                                                                        /* Further adjust font size for smaller screens */
+                                                                                                    }
+                                                                                                }
+                                                                                                /*##########our purpose section#################*/
+                                                                                                /* Purpose section */
+                                                                                                /* Styles for the Purpose Container */
+                                                                                                /* Styles for the Purpose Container */
+                                                                                                /* Styles for the Purpose Container */
+                                                                                                .purpose__container {
+                                                                                                    position: relative;
+                                                                                                    /* Change to relative positioning */
+                                                                                                    width: 97%;
+                                                                                                    /* Allow the container to adjust its height */
+                                                                                                    /*padding: .3rem auto 0.9rem;*/
+                                                                                                    outline: none;
+                                                                                                    margin-top: 15%;
+                                                                                                    margin-left: 1%;
+                                                                                                    margin-right: 100%;
+                                                                                                }
+                                                                                                /* Background Image Styles */
+                                                                                                .purpose__background {
+                                                                                                    width: 100%;
+                                                                                                    /* Adjusted to cover the entire container */
+                                                                                                    position: relative;
+                                                                                                    left: 0;
+                                                                                                    z-index: 0;
+                                                                                                    /* Place the image behind other content */
+                                                                                                }
+                                                                                                .purpose__text-area {
+                                                                                                    /*background-color: rgba(255, 255, 255, 0.7);*/
+                                                                                                    border-radius: 10px;
+                                                                                                    padding: 10px auto 0;
+                                                                                                    margin: 20px auto;
+                                                                                                    max-width: 40%;
+                                                                                                    backdrop-filter: blur(9px);
+                                                                                                    position: absolute;
+                                                                                                    z-index: 1;
+                                                                                                    text-align: center;
+                                                                                                }
+                                                                                                .purpose__container>h1 {
+                                                                                                    text-align: center;
+                                                                                                }
+                                                                                                /* Responsive styles */
+                                                                                                @media (max-width: 768px),
+                                                                                                (max-height: 400px) {
+                                                                                                    .purpose__container {
+                                                                                                        height: auto;
+                                                                                                        /* Allow the container to adjust its height */
+                                                                                                    }
+                                                                                                    .purpose__background {
+                                                                                                        height: auto;
+                                                                                                        /* Allow the image to adjust its height */
+                                                                                                    }
+                                                                                                    .purpose__text-area {
+                                                                                                        margin: 10px auto;
+                                                                                                        /* Center the text area horizontally */
+                                                                                                        padding: 10px;
+                                                                                                        max-width: 90%;
+                                                                                                        /* Adjusted for better readability on smaller screens */
+                                                                                                    }
+                                                                                                }
