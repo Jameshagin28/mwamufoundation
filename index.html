@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="The trusted community" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <span><ion-icon name="call-outline"></ion-icon> +254708290201</span>
+        <ul>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <nav>
+        <div class="logo">
+            <img src="images/LOGO.png" class="logo">
+        </div>
+        <div class="toggle">
+            <a href="#">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="timestem.html">Programmes</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+
+    </nav>
+    <script>
+        $(function() {
+            $(".toggle a").on("click", function(e) {
+                e.preventDefault(); // Prevent the default behavior of the anchor link
+
+                if ($(".menu").hasClass("active")) {
+                    $(".menu").removeClass("active");
+                    $(this).html("<ion-icon name='menu-outline'></ion-icon>");
+                } else {
+                    $(".menu").addClass("active");
+                    $(this).html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</body>
+
+</html>
