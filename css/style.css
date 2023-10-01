@@ -170,5 +170,97 @@
 .slider-nav a:hover {
     opacity: 1;
 }
+/*###section starts here##############*/
+                
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    outline: thick solid gold;
+    width: 99%;
+    margin-top: 5%;
+}
+
+.text-column {
+    flex: 1;
+    padding: 1rem;
+}
+/* Style for the image with transition */
+
+.image-column {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: grid;
+}
+
+.image-column img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+/* Hover effect for the image */
+
+.image-column:hover {
+    transform: scale(1.1);
+}
+/* Additional styles for text */
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    position: relative;
+    background-image: linear-gradient(gold, gold);
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+.section-title:hover {
+    background-size: 100% 80%;
+    background-position: 0% 100%;
+    transition: background-position .7s, background-size .5s ease-in-out;
+}
+
+.section-text {
+    font-size: 16px;
+}
+
+.textcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns with equal width */
+    gap: 20px;
+    /* Adjust the gap between grid items as needed */
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    /* Change flex direction to column for smaller screens */
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Reset flex properties for text and image columns */
+    .text-column {
+        flex: none;
+        /* Remove flex property */
+        padding: 3rem;
+    }
+    .image-column {
+        flex: none;
+        /* Remove flex property */
+        position: relative;
+        overflow: hidden;
+        display: block;
+        /* Change to block display */
+        margin-top: 20px;
+        /* Add margin to create space between text and image */
+    }
+}
 
 
