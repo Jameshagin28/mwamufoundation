@@ -263,4 +263,82 @@
     }
 }
 
+/*OUR SEVICES OAGE STARTS HEE ###################################*/
+.service__container {
+    width: 80%;
+    height: auto;
+    margin-top: 5%;
+    outline: 2px solid black;
+    margin: 30vh auto 0;
+    position: relative;
+}
+
+.service__container h1 {
+    text-align: center;
+    padding: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.service__container h1::after {
+    content: '';
+    background: #303ef7;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.service {
+    text-align: center;
+    padding: 25px 10px;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+.service h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.service:hover {
+    background: #303ef7;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .service__container {
+        width: 90%;
+        /* Adjust width for smaller screens */
+    }
+    .service__container h1 {
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+    }
+    .service {
+        font-size: 14px;
+        /* Further adjust font size for smaller screens */
+    }
+}
+
 
