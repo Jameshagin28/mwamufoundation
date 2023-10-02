@@ -112,7 +112,7 @@
                         margin-top: 15px;
                         display: none;
                     }
-                    .menu .active .toggle {
+                    .menu.active, .toggle {
                         display: block;
                     }
                     .toggle {
@@ -267,7 +267,7 @@
 .service__container {
     width: 80%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 30%;
     outline: 2px solid black;
     margin: 30vh auto 0;
     position: relative;
