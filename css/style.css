@@ -440,45 +440,45 @@ nav {
     flex-direction: row;
     align-items: center;
     padding: 20px;
-}
-
-.image__container-abt {
+  }
+  
+  .image__container-abt {
     flex: 1;
     padding: 10px;
-}
-
-.images__container-abt {
+  }
+  
+  .images__container-abt {
     max-width: 100%;
     height: auto;
     display: block;
     border-radius: 12px;
     transition: transform 0.3s ease-in-out;
-}
-
-.images__container-abt:hover {
+  }
+  
+  .images__container-abt:hover {
     transform: scale(1.1);
-}
-
-.abt-text-area {
+  }
+  
+  .abt-text-area {
     flex: 2;
     padding: 1px;
-}
-
-.abt-text-area h2 {
+  }
+  
+  .abt-text-area h2 {
     color: #ff6347;
     font-size: 45px;
     text-align: center;
     margin-top: 35px;
-}
-
-.abt-text-area p {
+  }
+  
+  .abt-text-area p {
     font-size: 25px;
     line-height: 1.5;
     margin-bottom: 40px;
     color: #666;
-}
-
-.view-more-button {
+  }
+  
+  .view-more-button {
     background-color: #80b918;
     color: #fff;
     border-radius: 5px;
@@ -489,12 +489,13 @@ nav {
     border-bottom: 5px;
     display: inline-block;
     transition: 0.3s ease;
-}
-
-.view-more-button button:hover {
+  }
+  
+  .view-more-button:hover {
     background-color: #80b918;
     transform: scale(1.1);
-}
+  }
+  
 /*@media screen(max-width:760px) {}*/
 /*end of about us------------------*/
 
