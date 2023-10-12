@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="The trusted community" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Title</title>
@@ -34,42 +36,49 @@
             </li>
         </ul>
     </div>
-    <nav>
-        <div class="logo">
-            <img src="images/LOGO.png" class="logo">
-        </div>
-        <div class="toggle">
-            <a href="#">
-                <ion-icon name="menu-outline"></ion-icon>
-            </a>
-        </div>
-        <ul class="menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="timestem.html">Programmes</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">CONTACT US</a></li>
-        </ul>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/LOGO.png" class="logo">
+            </div>
+            <div class="toggle">
+                <a href="#">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </a>
+            </div>
 
-    </nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">About Us</a></i>
+                    <li><a href="prog.html">Programmes</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+
+        </nav>
+    </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        $(function() {
-            $(".toggle a").on("click", function(e) {
-                e.preventDefault(); // Prevent the default behavior of the anchor link
+        $(document).ready(function() {
+            $(function() {
+                $(".toggle a").on("click", function(e) {
+                    e.preventDefault(); // Prevent the default behavior of the anchor link
 
-                if ($(".menu").hasClass("active")) {
-                    $(".menu").removeClass("active");
-                    $(this).html("<ion-icon name='menu-outline'></ion-icon>");
-                } else {
-                    $(".menu").addClass("active");
-                    $(this).html("<ion-icon name='close-outline'></ion-icon>");
-                }
+                    if ($(".menu").hasClass("active")) {
+                        $(".menu").removeClass("active");
+                        $(this).html("<ion-icon name='menu-outline'></ion-icon>");
+                    } else {
+                        $(".menu").addClass("active");
+                        $(this).html("<ion-icon name='close-outline'></ion-icon>");
+                    }
+                });
             });
         });
     </script>
-        <section class="slide_container">
+
+
+    <section class="slide_container">
         <div class="slider-wrapper">
             <div class="slider">
                 <img src="images/slide-9.jpg" id="slide-1">
@@ -99,87 +108,120 @@
         </div>
     </section>
 
-<!----second section start here-->
-<div class="section-container">
-    <div class="text-column">
-        <span><b>About Mwalimu James Japheth Mwamu Foundation</b> </span>
-        <h2 class="section-title">#KISUMU MANYIEN</h2>
-        <p class="section-text">Our mission is to empower students to create their own futures, and we are driven by the belief that every person should have the opportunity to study and work in an environment free from discrimination. We believe that education is a fundamental
-            human right, and we are committed to creating an inclusive learning environment for all. We seek to promote community building through both our programs and in various ways throughout our organization.</p>
-    </div>
-    <div class="image-column">
-        <img src="images/home1.jpg" alt="Image Description">
-    </div>
-</div>
-
-<!--OURS ERVICES SECTION STARTS HERE-->
-<div class="service__container container">
-    <h1>Our SERVICES</h1>
-    <div class="row">
-        <div class="service">
-            <i class="fa fa-balance-scale" aria-hidden="true"></i>
-            <h2>Integrity</h2>
-
-            <p> </p>
+    <div class="section-container">
+        <div class="text-column">
+            <span><b>About Mwalimu James Japheth Mwamu Foundation</b> </span>
+            <h2 class="section-title">#KISUMU MANYIEN</h2>
+            <p class="section-text">Our mission is to empower students to create their own futures, and we are driven by the belief that every person should have the opportunity to study and work in an environment free from discrimination. We believe that education is a fundamental
+                human right, and we are committed to creating an inclusive learning environment for all. We seek to promote community building through both our programs and in various ways throughout our organization.</p>
         </div>
-
-        <div class="service">
-            <i class="fa fa-comments" aria-hidden="true"></i>
-            <h2>Communication</h2>
-
-            <p> </p>
-        </div>
-        <div class="service">
-            <i class="fa fa-book" aria-hidden="true"></i>
-            <h2>Formative and summative assements </h2>
-
-            <p> </p>
-        </div>
-        <div class="service">
-            <i class="fa fa-line-chart" aria-hidden="true"></i>
-            <h2>Sustainability Planning </h2>
-
-            <p> </p>
-        </div>
-        <div class="service">
-            <i class="fa fa-handshake-o" aria-hidden="true"></i>
-            <h2>Maximum Community Participation</h2>
-
-            <p> </p>
+        <div class="image-column">
+            <img src="images/home1.jpg" alt="Image Description">
         </div>
     </div>
-</div>
-<!---our services page ends here -->
 
 
+    <div class="purpose">
+        <div class="background">
+            <div class="content">
+                <h1>OUR PURPOSE</h1>
+                <p>At the Mwalimu James Japheth Mwamu Foundation, we believe that every Kenyan can change the world.</p>
 
+                <p>We're committed to transforming Kenyans' leadership by mentoring young men and women across the country—in agriculture, water and sanitation, and innovation—through programs like KISUMU MANYIEN.</p>
 
+                <p>You might have heard of us through our work with young people in Nyanza Province. We donate books and educational materials to underprivileged communities so they can get the support they need to succeed in their education. And it's not
+                    just about giving them access—it's about empowering them to help themselves.</p>
 
+                <p>At Mwalimu James Japheth Mwamu Foundation we believe that every Kenyan can change their community for the better, so we're committed to making sure our youth have all the tools they need to succeed!</p>
 
+            </div>
+        </div>
+    </div>
+    <!--<div class="purpose">
+        <div class="purpose__container">
+            <h1 class="text-area">our purpose</h1>
+            <article class="cardtext">
 
+            </article>
+        </div>
+    </div>-->
+    <div class="separator">
+        <hr class="separator-line">
+    </div>
+    <div class="abt__container">
+        <div class="image__container-abt">
+            <img src="images/about us.jpg" alt="Image" class="images__container-abt">
+        </div>
+        <div class="abt-text-area" id="about_us">
+            <h2>About us </h2>
+            <p>THE Mwalimu James Foundation is a charitable based Organisation,established as a Company limited by gurantee in the year 2020.</p>
+            <button class="view-more-button">VIEW MORE</button>
 
+        </div>
+    </div>
+    <div class="carousel-part">
+        <h2>OUR PARTNERS</h2>
+        <div class="carousel-track">
+            <!-- Add partner icons here -->
+            <div class="partner-icon"> <img src="images/k.jpg" class="carousel-icon"></div>
+            <div class="partner-icon">Icon 2</div>
+            <div class="partner-icon">Icon 3</div>
+            <!-- Add more partner icons as needed -->
+        </div>
+    </div>
+    <footer>
+        <div class="row__footer">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/index.js"></script>
-
+            <div class="col">
+                <img src="images/LOGO.png" class="logo__footer">
+                <p>Our mission is to empower students to create their own futures, and we are driven by the belief that every person should have the opportunity to study and work in an environment free from discrimination.
+                </p>
+            </div>
+            <div class="col">
+                <h3>Ofiice
+                    <div class="underline"><span></span></div>
+                </h3>
+                <p>Church Road</p>
+                <p>Kisumu Kenya</p>
+                <p>Kisumu baptist Collage,P.Box 1013,Kisumu </p>
+                <p class="email-id">mwalimujamesjaphethfoundation@gmail.com</p>
+                <h4>+254 - 0708290201</h4>
+            </div>
+            <div class="col">
+                <h3>links
+                    <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter
+                    <div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Design by HAGIN © 2023- All Rights Reserved</p>
+    </footer>
+    <script src="js/index.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 </body>
