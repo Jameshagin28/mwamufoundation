@@ -61,6 +61,26 @@
         </nav>
     </header>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(function() {
+                $(".toggle a").on("click", function(e) {
+                    e.preventDefault(); // Prevent the default behavior of the anchor link
+
+                    if ($(".menu").hasClass("active")) {
+                        $(".menu").removeClass("active");
+                        $(this).html("<ion-icon name='menu-outline'></ion-icon>");
+                    } else {
+                        $(".menu").addClass("active");
+                        $(this).html("<ion-icon name='close-outline'></ion-icon>");
+                    }
+                });
+            });
+        });
+    </script>
+
     <div class="header">
         <div class="text_header">
             <h1>About Us</h1>
