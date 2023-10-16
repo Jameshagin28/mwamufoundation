@@ -449,7 +449,6 @@ nav {
   
   .images__container-abt {
     max-width: 100%;
-
     height: auto;
     display: block;
     border-radius: 12px;
@@ -533,23 +532,28 @@ nav {
     align-items: center;
     justify-content: center;
 }
-
+/*Purpose Section ######################################*/
+.content__purpose{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.content__purpose h1{
+    font-size: 24px;
+    text-align: center;
+}
+.content__purpose p{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
 .background {
     background-image: url('/images/header.png');
     background-size: cover;
     background-position: center;
     height: 500px;
     position: relative;
-}
-/* Style for the paragraph */
-
-.content {
-    background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
 }
 
 @media (max-width:780px) {
