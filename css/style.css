@@ -727,7 +727,7 @@ hr {
 }
 /*headers for all page headers responsive ######################*/
 
-.header {
+.header_about{
     text-align: left;
     height: 500px;
     position: relative;
