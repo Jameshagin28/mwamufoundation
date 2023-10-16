@@ -725,7 +725,7 @@ hr {
 
 .header {
     text-align: left;
-    height: 500px;
+    height: auto;
     position: relative;
     background-image: url('/images/abt-header.png');
     background-size: cover;
