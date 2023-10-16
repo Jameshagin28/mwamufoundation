@@ -754,7 +754,7 @@ hr {
 /* Media query for screens with a maximum width of 768px (typical for mobile) */
 
 @media (max-width: 768px) {
-    .header {
+    .header_about {
         text-align: center;
         height: auto;
     }
