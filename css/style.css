@@ -228,7 +228,7 @@ nav {
     flex: 1;
     padding: 1rem;
 }
-/* Style for the image with transition */
+
 
 .image-column {
     flex: 1;
@@ -243,12 +243,12 @@ nav {
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
-/* Hover effect for the image */
+
 
 .image-column:hover {
     transform: scale(1.1);
 }
-/* Additional styles for text */
+
 
 .section-title {
     font-size: 3em;
@@ -274,33 +274,26 @@ nav {
 .textcontainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Two columns with equal width */
     gap: 20px;
-    /* Adjust the gap between grid items as needed */
     align-items: center;
 }
 
 @media (max-width: 768px) {
-    /* Change flex direction to column for smaller screens */
     .section-container {
         flex-direction: column;
         align-items: center;
     }
-    /* Reset flex properties for text and image columns */
+
     .text-column {
         flex: none;
-        /* Remove flex property */
         padding: 3rem;
     }
     .image-column {
         flex: none;
-        /* Remove flex property */
         position: relative;
         overflow: hidden;
         display: block;
-        /* Change to block display */
         margin-top: 20px;
-        /* Add margin to create space between text and image */
     }
 }
 /*services section*/
@@ -369,22 +362,18 @@ nav {
 @media (max-width: 768px) {
     .service__container {
         width: 90%;
-        /* Adjust width for smaller screens */
     }
     .service__container h1 {
         font-size: 24px;
-        /* Adjust font size for smaller screens */
     }
     .service {
         font-size: 14px;
-        /* Further adjust font size for smaller screens */
     }
 }
 
 .background-section {
     background-position: center/cover no-repeat fixed;
     height: 300px;
-    /* Set the desired height of the background section */
 }
 
 .card-container {
@@ -411,9 +400,7 @@ nav {
 
 .separator {
     margin-top: 20px;
-    /* Adjust as needed */
     margin-bottom: 20px;
-    /* Adjust as needed */
     border: 0;
 }
 /* Style for the line separator */
@@ -421,17 +408,16 @@ nav {
 .separator-line {
     border: 0;
     border-bottom: 2px solid rgb(29, 114, 18);
-    /* Adjust the border properties as needed */
+    
     width: 100%;
-    /* Adjust the width as needed */
+
     transition: width 1s ease-out;
-    /* Transition effect on width property */
+  
 }
-/* Hover effect on the separator */
+
 
 .separator-line:hover {
     width: 30%;
-    /* Adjust the width on hover as needed */
 }
 /*end of divider*/
 
@@ -508,7 +494,6 @@ nav {
 .carousel-track {
     display: flex;
     animation: slide 10s linear infinite;
-    /* Adjust duration and timing function as needed */
 }
 /* Keyframes for the slide animation */
 
@@ -789,29 +774,26 @@ hr {
 .mission-vision-container {
     display: flex;
     justify-content: space-between;
-    /* To separate the columns */
     margin: 20px 0;
 }
 
 .mission-vision-column {
     flex: 1;
-    /* Allow columns to take equal width */
     text-align: center;
 }
 
 .mission-vision-column i {
     font-size: 48px;
-    /* Adjust the icon size as needed */
+   
 }
 
 .mission-vision-column h2 {
     margin: 10px 0;
-    /* Adjust heading margin as needed */
+
 }
 
 .mission-vision-column p {
     font-size: 16px;
-    /* Adjust font size as needed */
 }
 /*programmes#################################################*/
 
