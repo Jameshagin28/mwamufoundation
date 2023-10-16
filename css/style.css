@@ -734,7 +734,7 @@ hr {
     background-position:center center;
     padding: 100px;
     text-align: left;
-    background-image: url(/images/abt-header.png);
+    background-image: url("/images/abt-header.png");
 }
 
 .text_header {
