@@ -728,13 +728,13 @@ hr {
 /*headers for all page headers responsive ######################*/
 
 .header_about{
-    text-align: left;
     height: 500px;
     position: relative;
-    background-image: url('/images/abt-header.png');
     background-size: 100% 100%;
     background-position:center center;
     padding: 100px;
+    text-align: left;
+    background-image: url(/images/abt-header.png);
 }
 
 .text_header {
