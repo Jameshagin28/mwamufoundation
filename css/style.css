@@ -228,7 +228,7 @@ nav {
     flex: 1;
     padding: 1rem;
 }
-
+/* Style for the image with transition */
 
 .image-column {
     flex: 1;
@@ -243,12 +243,12 @@ nav {
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
-
+/* Hover effect for the image */
 
 .image-column:hover {
     transform: scale(1.1);
 }
-
+/* Additional styles for text */
 
 .section-title {
     font-size: 3em;
@@ -274,26 +274,33 @@ nav {
 .textcontainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* Two columns with equal width */
     gap: 20px;
+    /* Adjust the gap between grid items as needed */
     align-items: center;
 }
 
 @media (max-width: 768px) {
+    /* Change flex direction to column for smaller screens */
     .section-container {
         flex-direction: column;
         align-items: center;
     }
-
+    /* Reset flex properties for text and image columns */
     .text-column {
         flex: none;
+        /* Remove flex property */
         padding: 3rem;
     }
     .image-column {
         flex: none;
+        /* Remove flex property */
         position: relative;
         overflow: hidden;
         display: block;
+        /* Change to block display */
         margin-top: 20px;
+        /* Add margin to create space between text and image */
     }
 }
 /*services section*/
@@ -362,18 +369,22 @@ nav {
 @media (max-width: 768px) {
     .service__container {
         width: 90%;
+        /* Adjust width for smaller screens */
     }
     .service__container h1 {
         font-size: 24px;
+        /* Adjust font size for smaller screens */
     }
     .service {
         font-size: 14px;
+        /* Further adjust font size for smaller screens */
     }
 }
 
 .background-section {
     background-position: center/cover no-repeat fixed;
     height: 300px;
+    /* Set the desired height of the background section */
 }
 
 .card-container {
@@ -400,7 +411,9 @@ nav {
 
 .separator {
     margin-top: 20px;
+    /* Adjust as needed */
     margin-bottom: 20px;
+    /* Adjust as needed */
     border: 0;
 }
 /* Style for the line separator */
@@ -408,16 +421,17 @@ nav {
 .separator-line {
     border: 0;
     border-bottom: 2px solid rgb(29, 114, 18);
-    
+    /* Adjust the border properties as needed */
     width: 100%;
-
+    /* Adjust the width as needed */
     transition: width 1s ease-out;
-  
+    /* Transition effect on width property */
 }
-
+/* Hover effect on the separator */
 
 .separator-line:hover {
     width: 30%;
+    /* Adjust the width on hover as needed */
 }
 /*end of divider*/
 
@@ -426,45 +440,45 @@ nav {
     flex-direction: row;
     align-items: center;
     padding: 20px;
-  }
-  
-  .image__container-abt {
+}
+
+.image__container-abt {
     flex: 1;
     padding: 10px;
-  }
-  
-  .images__container-abt {
+}
+
+.images__container-abt {
     max-width: 100%;
     height: auto;
     display: block;
     border-radius: 12px;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .images__container-abt:hover {
+}
+
+.images__container-abt:hover {
     transform: scale(1.1);
-  }
-  
-  .abt-text-area {
+}
+
+.abt-text-area {
     flex: 2;
     padding: 1px;
-  }
-  
-  .abt-text-area h2 {
+}
+
+.abt-text-area h2 {
     color: #ff6347;
     font-size: 45px;
     text-align: center;
     margin-top: 35px;
-  }
-  
-  .abt-text-area p {
+}
+
+.abt-text-area p {
     font-size: 25px;
     line-height: 1.5;
     margin-bottom: 40px;
     color: #666;
-  }
-  
-  .view-more-button {
+}
+
+.view-more-button {
     background-color: #80b918;
     color: #fff;
     border-radius: 5px;
@@ -475,13 +489,12 @@ nav {
     border-bottom: 5px;
     display: inline-block;
     transition: 0.3s ease;
-  }
-  
-  .view-more-button:hover {
+}
+
+.view-more-button:hover {
     background-color: #80b918;
     transform: scale(1.1);
-  }
-  
+}
 /*@media screen(max-width:760px) {}*/
 /*end of about us------------------*/
 
@@ -494,6 +507,7 @@ nav {
 .carousel-track {
     display: flex;
     animation: slide 10s linear infinite;
+    /* Adjust duration and timing function as needed */
 }
 /* Keyframes for the slide animation */
 
@@ -517,22 +531,30 @@ nav {
     align-items: center;
     justify-content: center;
 }
-/*Purpose Section ######################################*/
-.content__purpose{
+/*purpose sec$$$$$$$$$$$$$$$$$$$$$$$$$$$$STARTS HERE$$$$$$$$$$$$$*/
+
+.content__purpose {
     max-width: 800px;
+    /* Set the maximum width for the content */
     margin: 0 auto;
+    /* Center the content horizontally */
     text-align: left;
+    /* Reset text alignment */
     line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.7);
 }
-.content__purpose h1{
+/* Style the headings and paragraphs as needed */
+
+.content__purpose h1 {
     font-size: 24px;
     text-align: center;
 }
-.content__purpose p{
-    margin-bottom: 20px;
+
+.content__purpose p {
     font-size: 16px;
+    margin-bottom: 20px;
 }
+
 .background {
     background-image: url('/images/header.png');
     background-size: cover;
@@ -712,14 +734,15 @@ hr {
 }
 /*headers for all page headers responsive ######################*/
 
-.header_about{
+.header_about {
+    text-align: left;
     height: 500px;
     position: relative;
+    background-image: url(/images/abt__header.png);
     background-size: 100% 100%;
-    background-position:center center;
+    background-position: center center;
+    /* Center the image */
     padding: 100px;
-    text-align: left;
-    background-image: url('/images/Abt-header.png');
 }
 
 .text_header {
@@ -740,7 +763,7 @@ hr {
 /* Media query for screens with a maximum width of 768px (typical for mobile) */
 
 @media (max-width: 768px) {
-    .header_about {
+    .header {
         text-align: center;
         height: auto;
     }
@@ -749,9 +772,11 @@ hr {
         text-align: left;
         margin: 20px 0;
         font-size: 20px;
+        /* Adjust font size as needed */
     }
     .text_header h1 {
         font-size: 30px;
+        /* Adjust font size as needed */
     }
 }
 /*Programmes header####*/
@@ -766,7 +791,6 @@ hr {
 .prog__header h1 {
     position: sticky;
     bottom: 50%;
-    left: 0;
     color: goldenrod;
 }
 /*about us icons#*/
@@ -774,46 +798,49 @@ hr {
 .mission-vision-container {
     display: flex;
     justify-content: space-between;
+    /* To separate the columns */
     margin: 20px 0;
 }
 
 .mission-vision-column {
     flex: 1;
+    /* Allow columns to take equal width */
     text-align: center;
 }
 
 .mission-vision-column i {
     font-size: 48px;
-   
+    /* Adjust the icon size as needed */
 }
 
 .mission-vision-column h2 {
     margin: 10px 0;
-
+    /* Adjust heading margin as needed */
 }
 
 .mission-vision-column p {
     font-size: 16px;
+    /* Adjust font size as needed */
 }
 /*programmes#################################################*/
 
 .prog__container {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px auto;
     flex-wrap: wrap;
+    border-color: thick solid black;
 }
 
-.column {
+.column__prog {
     float: left;
     max-width: 20%;
     padding: 10px;
-    text-align: center;
     margin: 5px;
     flex: 1;
 }
 
-.column h2 {
+.column__prog h3 {
     font-size: 19px;
     text-align: center;
 }
@@ -828,8 +855,260 @@ hr {
 }
 
 @media(max-width:768px) {
-    .column {
+    .column__prog {
         max-width: 50%;
     }
 }
-/*contactus##########################*/
+/*Contact Us$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/* Set the contact form section to full width and height */
+/* Create a split-screen layout */
+
+.split-screen {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.left-side {
+    background: #f1f1f1;
+    height: 90vh;
+}
+
+.right-side {
+    background: #ffffff;
+    /* Background color for the right side (contact form) */
+}
+
+.contact-area {
+    width: 80%;
+    /* Adjust the width of the contact form content */
+}
+
+.contact-area h1 {
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left-side .map {
+    filter: blur(1px);
+}
+
+.appointment-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #f1f1f1;
+    /* Adjust the background color as needed */
+}
+
+.contact-row {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.appointment-form {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+button.button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.button:hover {
+    background: #0056b3;
+}
+
+.message-form {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.message-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.message-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.message-form button:hover {
+    background: #0056b3;
+}
+/*back to top button###########################################################################*/
+/* Styles for the back-to-top button */
+
+a.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    left: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+a.back-to-top-button:hover {
+    background-color: #0056b3;
+}
+/* Show the button when you scroll down */
+
+a.back-to-top-button.active {
+    opacity: 1;
+}
+/*OUR TEAM$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.ourteam_sect {
+    width: 100%;
+}
+
+.ourteam_container {
+    width: 80%;
+    margin: auto;
+}
+
+.ourteam_row {
+    width: 60%;
+    margin: auto;
+}
+
+.ourteam_row .ourteam_title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ourteam_row .ourteam_title h1 {
+    font-size: 45px;
+    color: #2f5d55;
+    letter-spacing: 1.5px;
+}
+
+.team_card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.card__team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.image-section img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.ourteam_container {
+    width: 100%;
+    text-align: center;
+}
+
+.ourteam_container h3 {
+    font-size: 35px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #6a6a6a;
+    font-family: sans-serif;
+}
+
+.ourteam_container p {
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: #6c6c6c;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social a {
+    font-size: 18px;
+    padding: 0px 5px;
+    color: #7d7d7d;
+}
+
+.social a:hover {
+    color: #7d7d7d;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width:900px) {
+    .team_card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .team_card {
+        grid-template-columns: 1fr;
+    }
+    .ourteam_row .ourteam_title h1 {
+        font-size: 35px;
+    }
+}
+/*GALLERY NOTICE$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.neon {
+    text-align: center;
+    width: 300px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 90px;
+    color: #5BE0B3;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px #6EECC1;
+    animation: flux 2s linear infinite;
+    background-color: black;
+}
