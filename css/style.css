@@ -738,7 +738,7 @@ hr {
     text-align: left;
     height: 500px;
     position: relative;
-    background-image: url(/images/abt__header.png);
+    background-image: url('/images/Abt-header.png');
     background-size: 100% 100%;
     background-position: center center;
     /* Center the image */
