@@ -826,23 +826,22 @@ hr {
 
 .prog__container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
     margin: 20px auto;
-    flex-wrap: wrap;
-    border-color: thick solid black;
+    border: 2px solid black; /* Corrected border property */
+    padding: 10px; /* Added padding for spacing */
 }
 
 .column__prog {
-    float: left;
-    max-width: 20%;
+    max-width: 100%; /* Occupy the full width of the container */
     padding: 10px;
     margin: 5px;
-    flex: 1;
+    text-align: center; /* Center the text */
 }
 
 .column__prog h3 {
     font-size: 19px;
-    text-align: center;
 }
 
 .image__holder {
@@ -854,11 +853,12 @@ hr {
     width: 228px;
 }
 
-@media(max-width:768px) {
-    .column__prog {
-        max-width: 50%;
+@media (max-width: 768px) {
+    .prog__container {
+        padding: 5px; /* Adjust padding for smaller screens */
     }
 }
+
 /*Contact Us$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 /* Set the contact form section to full width and height */
 /* Create a split-screen layout */
