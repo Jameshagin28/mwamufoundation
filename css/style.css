@@ -548,11 +548,8 @@ nav {
 
 .content__purpose {
     max-width: 800px;
-    /* Set the maximum width for the content */
     margin: 0 auto;
-    /* Center the content horizontally */
     text-align: left;
-    /* Reset text alignment */
     line-height: 1.5;
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -574,6 +571,7 @@ nav {
     background-position: center;
     height: 500px;
     position: relative;
+    max-height: 100%;
 }
 
 @media (max-width:780px) {
@@ -581,6 +579,13 @@ nav {
         max-width: 90%;
         padding: 10px;
     }
+    .content__purpose p{
+        font-size: 13px;
+        max-height: 30%;
+    }
+    .background{
+        max-height: 100%;
+}
 }
 
 .carousel-icon {
