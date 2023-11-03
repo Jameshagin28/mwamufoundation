@@ -411,9 +411,7 @@ nav {
 
 .separator {
     margin-top: 20px;
-    /* Adjust as needed */
     margin-bottom: 20px;
-    /* Adjust as needed */
     border: 0;
 }
 /* Style for the line separator */
@@ -421,17 +419,13 @@ nav {
 .separator-line {
     border: 0;
     border-bottom: 2px solid rgb(29, 114, 18);
-    /* Adjust the border properties as needed */
     width: 100%;
-    /* Adjust the width as needed */
     transition: width 1s ease-out;
-    /* Transition effect on width property */
 }
 /* Hover effect on the separator */
 
 .separator-line:hover {
     width: 30%;
-    /* Adjust the width on hover as needed */
 }
 /*end of divider*/
 
@@ -448,7 +442,7 @@ nav {
 }
 
 .images__container-abt {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display: block;
     border-radius: 12px;
@@ -495,7 +489,26 @@ nav {
     background-color: #80b918;
     transform: scale(1.1);
 }
-/*@media screen(max-width:760px) {}*/
+@media screen and (max-width:768px) {
+    .abt__container{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .images__container-abt{
+        position: relative;
+        display: flexbox;
+        width: auto;
+    }
+    .abt-text-area p{
+        font-size: 12px;
+    }
+    .abt-text-area h2{
+        font-size: 20px;
+    }
+    .view-more-button{
+        padding: 12px 10px;
+    }
+}
 /*end of about us------------------*/
 
 .carousel-part {
