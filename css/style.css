@@ -884,19 +884,6 @@ hr {
 /*Contact Us$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 /* Set the contact form section to full width and height */
 /* Create a split-screen layout */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body,
-input,
-textarea {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 .contact__container {
     position: relative;
     width: 100%;
