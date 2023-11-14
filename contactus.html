@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="The trusted community" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" crossorigin="anonymous">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://kit.fontawsome.com/64d58efce2.js" crossorigin="anonymous"></script>
@@ -34,77 +38,121 @@
         </li>
     </ul>
 </div>
-
-    <div class="contact__container">
-        <span class="big__circle"></span>
-        <div class="form__contact">
-            <div class="contact__info">
-                <h3 class="heading_contact"> Let's get in touch</h3>
-                <p class="heading_contact">At Mwalimu James Japheth Mwamu Foundation we believe that every Kenyan can change their community for the better, so we're committed to making sure our youth have all the tools they need to succeed
-                </p>
-                <div class="info">
-                    <div class="information">
-                        <i class="fa fa-circle-o" aria-hidden="true"></i>
-                        <p>Mwalimu James Japheth Mwamu Foundation </p>
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3>Request a Demo</h3>
+            <p class="blue-text">Just answer a few questions<br> so that we can personalize the right experience for you.</p>
+            <div class="card">
+                <h5 class="text-center mb-4">Powering world-class companies</h5>
+                <form class="form-card" onsubmit="event.preventDefault()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)" class="input"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)"  class="input"> </div>
                     </div>
-                    <div class="information">
-                        <img src="images/email-50.png" class="icon" alt="">
-                        <p>james_hagin@hotmail.com</p>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Business email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="validate(3)"  class="input"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" onblur="validate(4)"  class="input"> </div>
                     </div>
-                    <div class="information">
-                        <img src="images/phone-50.png" class="icon" alt="">
-                        <p>+254708290201</p>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Job title<span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"  class="input"> </div>
                     </div>
-                </div>
-                <div class="social_media__contact">
-                    <p>Connect with us:</p>
-                </div>
-                <div class="social_icons__contact">
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </div>
-            </div>
-           
-            <div class="contact__form">
-                <span class="circle one"></span>
-                <span class="circle two"></span>
-
-                <form action="contactus.html" class="con_form">
-                    <h3 class="heading_contact">Contact Us</h3>
-                    <div class="input__container">
-                        <input type="text" name="name" class="input" >
-                        <label for="">Username</label>
-                        <span>Username</span>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">What would you be using Flinks for?<span class="text-danger"> *</span></label> <input type="text" id="ans" name="ans" placeholder="" onblur="validate(6)" class="input"> </div>
                     </div>
-                    <div class="input__container">
-                        <input type="email" name="Email" class="input">
-                        <label for="">Email</label>
-                        <span>Email</span>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Request a demo</button> </div>
                     </div>
-                    <div class="input__container">
-                        <input type="tel" name="phone" class="input">
-                        <label for="">Phone</label>
-                        <span>Phone</span>
-                    </div>
-                    <div class="input__container textarea">
-                        <textarea name="message" class="input"></textarea>
-                        <label for="">Message</label>
-                        <span>Message</span>
-                    </div>
-                    <input type="submit" value="Send" class="contact_btn" />
                 </form>
             </div>
         </div>
     </div>
-    <script src="js/app.js"></script>
-    <a href="#top" class="back-to-top-button">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+</div>
 
 
+<script>
+    function validate(val) {
+    v1 = document.getElementById("fname");
+    v2 = document.getElementById("lname");
+    v3 = document.getElementById("email");
+    v4 = document.getElementById("mob");
+    v5 = document.getElementById("job");
+    v6 = document.getElementById("ans");
 
+    flag1 = true;
+    flag2 = true;
+    flag3 = true;
+    flag4 = true;
+    flag5 = true;
+    flag6 = true;
 
+    if(val>=1 || val==0) {
+        if(v1.value == "") {
+            v1.style.borderColor = "red";
+            flag1 = false;
+        }
+        else {
+            v1.style.borderColor = "green";
+            flag1 = true;
+        }
+    }
+
+    if(val>=2 || val==0) {
+        if(v2.value == "") {
+            v2.style.borderColor = "red";
+            flag2 = false;
+        }
+        else {
+            v2.style.borderColor = "green";
+            flag2 = true;
+        }
+    }
+    if(val>=3 || val==0) {
+        if(v3.value == "") {
+            v3.style.borderColor = "red";
+            flag3 = false;
+        }
+        else {
+            v3.style.borderColor = "green";
+            flag3 = true;
+        }
+    }
+    if(val>=4 || val==0) {
+        if(v4.value == "") {
+            v4.style.borderColor = "red";
+            flag4 = false;
+        }
+        else {
+            v4.style.borderColor = "green";
+            flag4 = true;
+        }
+    }
+    if(val>=5 || val==0) {
+        if(v5.value == "") {
+            v5.style.borderColor = "red";
+            flag5 = false;
+        }
+        else {
+            v5.style.borderColor = "green";
+            flag5 = true;
+        }
+    }
+    if(val>=6 || val==0) {
+        if(v6.value == "") {
+            v6.style.borderColor = "red";
+            flag6 = false;
+        }
+        else {
+            v6.style.borderColor = "green";
+            flag6 = true;
+        }
+    }
+
+    flag = flag1 && flag2 && flag3 && flag4 && flag5 && flag6;
+
+    return flag;
+}
+</script>
 
 
 
