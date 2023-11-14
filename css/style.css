@@ -1100,5 +1100,30 @@ a.back-to-top-button.active {
     line-height: 1;
     margin-bottom: 0.7rem;
 }
+.input__container {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+}
 
 /*END OF CONTACT$$$$$$$$$$$$$$$$$$$$$*/
