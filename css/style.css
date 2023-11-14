@@ -884,8 +884,7 @@ hr {
 /*Contact Us$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 /* Set the contact form section to full width and height */
 /* Create a split-screen layout */
-body,
-input,
+.input,
 textarea {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -1083,7 +1082,7 @@ textarea.input {
     position: relative;
 }
 
-.contact__info .title {
+.contact__info.title {
     color: #003246;
 }
 
