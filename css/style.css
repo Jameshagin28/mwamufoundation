@@ -884,6 +884,12 @@ hr {
 /*Contact Us$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 /* Set the contact form section to full width and height */
 /* Create a split-screen layout */
+body,
+input,
+textarea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .contact__container {
     position: relative;
     width: 100%;
@@ -1081,7 +1087,7 @@ textarea.input {
     color: #003246;
 }
 
-.text {
+.heading_contact {
     color: #333;
     margin: 1.5rem 0 2rem 0;
 }
@@ -1176,7 +1182,7 @@ textarea.input {
         transform: scale(0.9) translate(-40%, 30%);
         right: 50%;
     }
-    .text {
+    .heading_contact {
         margin: 1rem 0 1.5rem 0;
     }
     .social_media__contact {
@@ -1197,7 +1203,7 @@ textarea.input {
     .con_form .contact__info {
         padding: 1.7rem 1.6rem;
     }
-    .text,
+    .heading_contact,
     .information,
     .social_media__contact p {
         font-size: 1.15rem;
@@ -1220,9 +1226,6 @@ textarea.input {
         padding: 0.45rem 1.2rem;
     }
 }
-
-
-
 
 /*back to top button###########################################################################*/
 /* Styles for the back-to-top button */
