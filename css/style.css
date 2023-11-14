@@ -951,7 +951,7 @@ hr {
     position: relative;
 }
 
-.title {
+.heading_contact {
     color: #fff;
     font-weight: 500;
     font-size: 1.5rem;
@@ -1202,7 +1202,7 @@ textarea.input {
     .social_media__contact p {
         font-size: 1.15rem;
     }
-    .title {
+    .heading_contact {
         font-size: 1.15rem;
     }
     .social_icons__contact a {
