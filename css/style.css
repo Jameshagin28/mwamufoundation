@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -15,6 +16,7 @@ html {
     --_g0: calc(-.8*var(--s)), #88A65E var(--_f);
     --_g1: calc(-.8*var(--s)), #BFB35A var(--_f);
     --_s: calc(1.8*var(--s) + var(--b));
+    height: 100%;
 }
 
 body {
@@ -603,6 +605,7 @@ footer {
     font-size: 13px;
     line-height: 18px;
     margin-top: auto;
+
 }
 
 .row__footer {
