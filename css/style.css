@@ -1209,5 +1209,67 @@ textarea.input {
 .input__container.focus span:after {
     width: 50%;
     opacity: 1;
+}@media (max-width:850px) {
+    .form__contact {
+        grid-template-columns: 1fr;
+    }
+    .contact__info::before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+    .contact__form::before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+    .big__circle {
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%;
+    }
+    .text {
+        margin: 1rem 0 1.5rem 0;
+    }
+    .social_media__contact {
+        padding: 1.5rem 0 0 0;
+    }
+}
+@media (max-width:480px) {
+    .contact__container {
+        padding: 1.5rem;
+    }
+    .contact__info::before {
+        display: none;
+    }
+    .big__circle {
+        display: none;
+    }
+    .con_form .contact__info {
+        padding: 1.7rem 1.6rem;
+    }
+    .text,
+    .information,
+    .social_media__contact p {
+        font-size: 1.15rem;
+    }
+    .title {
+        font-size: 1.15rem;
+    }
+    .social_icons__contact a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .icon {
+        width: 23px;
+    }
+    .input {
+        padding: 0.45rem 1.12rem;
+    }
+    .contact_btn {
+        padding: 0.45rem 1.2rem;
+    }
 }
 /*END OF CONTACT$$$$$$$$$$$$$$$$$$$$$*/
