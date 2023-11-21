@@ -1147,4 +1147,67 @@ textarea.input {
     top: 1rem;
     transform: translateY(0);
 }
+.contact_btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #F9F54B;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.contact_btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.input__container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    padding: 0 0.4rem;
+    pointer-events: none;
+    color: transparent;
+    z-index: 500;
+}
+
+.input__container span::before,
+.input__container span::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #F9F54B;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input__container span:before {
+    left: 50%;
+}
+
+.input__container span:after {
+    right: 50%;
+}
+
+.input__container.focus label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+}
+
+.input__container.focus span:before,
+.input__container.focus span:after {
+    width: 50%;
+    opacity: 1;
+}
 /*END OF CONTACT$$$$$$$$$$$$$$$$$$$$$*/
