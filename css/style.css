@@ -654,7 +654,7 @@ ul li a {
     color: #fff;
 }
 
-form {
+.footer__form {
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -663,12 +663,12 @@ form {
     margin-bottom: 50px;
 }
 
-form .far {
+.footer__form .far {
     font-size: 18px;
     margin-right: 10px;
 }
 
-form input {
+.footer__form .contactus__input {
     width: 100%;
     background: transparent;
     color: #ccc;
@@ -676,14 +676,14 @@ form input {
     outline: none;
 }
 
-form button {
+.footer__form button {
     background: transparent;
     border: 0;
     outline: none;
     cursor: pointer;
 }
 
-form button .fas {
+.footer__form button .fas {
     font-size: 16px;
     color: #ccc;
 }
@@ -723,7 +723,7 @@ hr {
     overflow: hidden;
 }
 
-.underline span {
+.underline .footer__span {
     width: 16px;
     height: 80%;
     background: #fff;
