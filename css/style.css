@@ -806,12 +806,13 @@ hr {
 
 .hero {
     width: 100%;
+    background-image: url("/images/progheader.jpg");
     position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-   
+    height: 290px;
 }
 .hero::before{
     content: "";
@@ -829,7 +830,6 @@ hr {
     text-align: center;
     padding: 2rem;
     width: 100%;
-    height: 300px;
 
 }
 .hero__title{
