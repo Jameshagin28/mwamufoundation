@@ -812,7 +812,7 @@ hr {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 290px;
+   
 }
 .hero::before{
     content: "";
@@ -841,6 +841,9 @@ hr {
     font-size: 1.8rem;
     color: white;
 }
+
+
+
 a.back-to-top-button {
     position: fixed;
     bottom: 20px;
