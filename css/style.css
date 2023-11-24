@@ -804,7 +804,7 @@ hr {
 }
 /*Programmes header####*/
 
-.hero {
+.hero img {
     width: 100%;
     background-image: url("/images/progheader.jpg");
     position: relative;
@@ -813,15 +813,15 @@ hr {
     background-position: center center;
     background-size: cover;
    padding-bottom: 52.2%;
-   height: 300px;
 }
-.hero::before{
+.hero::before {
     content: "";
     background-color: rgb(29, 114, 18);
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
+    height: 300px;
 }
 .hero__content{
     position: absolute;
