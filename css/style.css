@@ -812,7 +812,7 @@ hr {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-   
+   padding-bottom: 52.2%;
 }
 .hero::before{
     content: "";
