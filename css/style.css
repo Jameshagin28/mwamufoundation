@@ -804,17 +804,68 @@ hr {
 }
 /*Programmes header####*/
 
-.prog__header {
-    text-align: justify;
-    background-image: url('/images/header.png');
-    height: 260px;
+.hero {
+    width: 100%;
+    background-image: url('/images/progheader.jpg');
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    height: 290px;
+}
+.hero::before{
+    content: "";
+    background-color: rgb(29, 114, 18);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.hero__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+
+}
+.hero__title{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.hero__text{
+    font-size: 1.8rem;
+    color: white;
+}
+a.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    left: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
-.prog__header h1 {
-    position: sticky;
-    bottom: 50%;
-    color: goldenrod;
+a.back-to-top-button:hover {
+    background-color: #0056b3;
+}
+/* Show the button when you scroll down */
+
+a.back-to-top-button.active {
+    opacity: 1;
 }
 /*about us icons#*/
 
@@ -847,70 +898,7 @@ hr {
 }
 /*programmes#################################################*/
 
-.prog__container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-    flex-wrap: wrap;
-    border: 2px solid black; /* Corrected border property */
-    padding: 10px; /* Added padding for spacing */
-}
 
-.column__prog {
-    max-width: 20%; /* Adjusted max-width to create columns */
-    padding: 10px;
-    margin: 5px;
-    flex: 1;
-}
-
-.column__prog h3 {
-    font-size: 19px;
-    text-align: center;
-}
-
-.image__holder {
-    max-width: 100%;
-    height: auto;
-}
-
-.prog__img {
-    width: 228px;
-}
-
-@media (max-width: 768px) {
-    .column__prog {
-        max-width: 100%; /* Full width for smaller screens */
-    }
-}
-
-
-
-a.back-to-top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 0;
-    left: 20px;
-    background-color: #007BFF;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 24px;
-    line-height: 50px;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-a.back-to-top-button:hover {
-    background-color: #0056b3;
-}
-/* Show the button when you scroll down */
-
-a.back-to-top-button.active {
-    opacity: 1;
-}
 /*OUR TEAM$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .ourteam_sect {
