@@ -813,6 +813,7 @@ hr {
     background-position: center center;
     background-size: cover;
    padding-bottom: 52.2%;
+   height: 300px;
 }
 .hero::before{
     content: "";
