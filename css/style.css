@@ -806,7 +806,6 @@ hr {
 
 .hero {
     width: 100%;
-    background-image: url("/images/progheader.jpg");
     position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
