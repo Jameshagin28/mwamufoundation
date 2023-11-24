@@ -916,7 +916,30 @@ hr {
         flex-basis: calc(25% - 18px);
     }
 }
-
+/*about us#############*/
+.mission-vision-container {
+    display: flex;
+    justify-content: space-between;
+    /* To separate the columns */
+    margin: 20px 0;
+}
+.mission-vision-column {
+    flex: 1;
+    /* Allow columns to take equal width */
+    text-align: center;
+}
+.mission-vision-column i {
+    font-size: 48px;
+    /* Adjust the icon size as needed */
+}
+.mission-vision-column h2 {
+    margin: 10px 0;
+    /* Adjust heading margin as needed */
+}
+.mission-vision-column p {
+    font-size: 16px;
+    /* Adjust font size as needed */
+}
 /*OUR TEAM$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .ourteam_sect {
