@@ -805,44 +805,38 @@ hr {
 /*Programmes header####*/
 
 .hero {
-    width: 100%;
-    background-image: url(//images/progheader.jpg);
     position: relative;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-   padding-bottom: 52.2%;
+    height: 400px; /* Set your desired height */
+    overflow: hidden;
 }
-.hero::before img {
-    content: "";
-    background-color: rgb(29, 114, 18);
-    display: block;
+
+/* Style for the hero image */
+.hero img {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
-    height: 300px;
+    object-fit: cover; /* Make sure the image covers the entire container */
+    z-index: -1; /* Send the image to the back */
 }
-.hero__content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.hero__content {
+    position: relative;
+    z-index: 1; /* Place the content above the image */
     text-align: center;
-    padding: 2rem;
-    width: 100%;
-
-}
-.hero__title{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: white;
-}
-.hero__text{
-    font-size: 1.8rem;
-    color: white;
+    color: #fff; /* Set your desired text color */
+    padding: 20px;
 }
 
+/* Additional styles for the hero title and text */
+.hero__title {
+    font-size: 36px;
+}
+
+.hero__text {
+    font-size: 18px;
+    color: white;
+}
 
 
 a.back-to-top-button {
