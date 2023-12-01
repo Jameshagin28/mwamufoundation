@@ -1362,15 +1362,15 @@ textarea.input {
     margin: 0 auto; /* Center the content horizontally */
 }
 
-.hero__title {
+.hero__title h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.hero__text {
+.hero__text p {
     font-size: 1rem;
     max-width: 100%; /* Ensure the text doesn't exceed the container width */
-    margin: 0 auto;
+    margin: 0;
 }
 
 @media (max-width: 600px) {
@@ -1385,7 +1385,8 @@ textarea.input {
         font-size: 1.5rem;
         margin-bottom: 0.5rem; /* Adjust spacing between title and text */
     }
-    .hero__text {
+    .hero__text p {
         font-size: 0.8rem;
+        margin: 0;
     }
 }
