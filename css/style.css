@@ -512,6 +512,7 @@ nav {
     }
 }
 /*end of about us------------------*/
+/*Start of our partners carouseltrack$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .carousel-part {
     overflow: hidden;
@@ -535,63 +536,6 @@ nav {
         /* Move to the left */
     }
 }
-/* Style for individual partner icons */
-
-.partner-icon {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    background-color: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/*purpose sec$$$$$$$$$$$$$$$$$$$$$$$$$$$$STARTS HERE$$$$$$$$$$$$$*/
-
-.content__purpose {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    line-height: 1.5;
-    background-color: rgba(255, 255, 255, 0.7);
-    
-    
-}
-/* Style the headings and paragraphs as needed */
-
-.content__purpose h1 {
-    font-size: 24px;
-    text-align: center;
-}
-
-.content__purpose p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.background {
-    background-image: url(../images/header.png);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    position: relative;
-    max-height: 100%;
-}
-
-@media (max-width:780px) {
-    .content {
-        max-width: 90%;
-        padding: 10px;
-    }
-    .content__purpose p{
-        font-size: 13px;
-        max-height: 30%;
-    }
-    .background{
-        max-height: 100%;
-}
-}
-
 .carousel-icon {
     width: 60px;
 }
@@ -761,7 +705,7 @@ hr {
     text-align: left;
     height: 500px;
     position: relative;
-    background-image: url(../images/Abt-header.png);
+    background-image: url(../images/abtheader.png);
     background-size: 100% 100%;
     background-position: center center;
     /* Center the image */
