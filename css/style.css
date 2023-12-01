@@ -706,11 +706,9 @@ hr {
     height: 500px;
     position: relative;
     background-image: url(../images/abtheader.png);
-    background-size: 100% 100%;
-    background-position: center center;
-    /* Center the image */
+    background-size: cover;  /* Ensure the image covers the entire container */
+    background-position: center center;  /* Center the background image */
     padding: 100px;
-    
 }
 
 .text_header {
@@ -728,11 +726,10 @@ hr {
 .text_header p {
     margin: 0;
 }
-/* Media query for screens with a maximum width of 768px (typical for mobile) */
 
+/* Media query for screens with a maximum width of 768px (typical for mobile) */
 @media (max-width: 768px) {
-    .header {
-        text-align: center;
+    .header__about {
         height: auto;
     }
     .text_header {
@@ -747,6 +744,7 @@ hr {
         /* Adjust font size as needed */
     }
 }
+
 /*Programmes header####*/
 
 
