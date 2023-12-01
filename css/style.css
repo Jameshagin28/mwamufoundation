@@ -1360,6 +1360,8 @@ textarea.input {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .hero__title {
