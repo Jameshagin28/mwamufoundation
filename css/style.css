@@ -752,7 +752,7 @@ hr {
 /*programmes#################################################*/
 .wrap {
     display: flex;
-    justify: space-between;
+    justify-content: space-between;
     align-items: stretch;
     width: 100%;
     gap: 24px;
