@@ -761,11 +761,12 @@ hr {
     text-align: left;
     height: 500px;
     position: relative;
-    background-image: url(//images/Abt-header.png);
+    background-image: url('https://github.com/Jameshagin28/mwamufoundation/blob/e9ec38b04719c687dea0a095da50acc5f3ba7e5a/images/progheader.jpg');
     background-size: 100% 100%;
     background-position: center center;
     /* Center the image */
     padding: 100px;
+    
 }
 
 .text_header {
