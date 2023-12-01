@@ -1378,7 +1378,7 @@ textarea.input {
         height: 100vh; /* Set a specific height for the background to remain visible */
     }
     .hero__content{
-        padding: 0.8rem;
+        padding: 1rem;
     }
     .hero__title,
     .hero__text {
@@ -1389,6 +1389,6 @@ textarea.input {
         margin-bottom: 0.5rem; /* Adjust spacing between title and text */
     }
     .hero__text {
-        font-size: 0.4rem;
+        font-size: 0.8rem;
     }
 }
