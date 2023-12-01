@@ -1377,6 +1377,9 @@ textarea.input {
     .hero {
         height: 100vh; /* Set a specific height for the background to remain visible */
     }
+    .hero__content{
+        padding: 1rem;
+    }
     .hero__title,
     .hero__text {
         display: block; /* Display title and text as block elements (stacked) */
