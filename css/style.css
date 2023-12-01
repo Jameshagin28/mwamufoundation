@@ -761,7 +761,7 @@ hr {
     text-align: left;
     height: 500px;
     position: relative;
-    background-image: url("https://github.com/Jameshagin28/mwamufoundation/blob/911fd7118ca10a6e135b7a28d3a517f9b94b414d/images/Abt-header.png");
+    background-image: url(../images/Abt-header.png);
     background-size: 100% 100%;
     background-position: center center;
     /* Center the image */
