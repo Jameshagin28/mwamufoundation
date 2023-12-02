@@ -1360,7 +1360,6 @@ textarea.input {
     border-radius: 10px;
     max-width: 75%;
     margin: 0 auto;
-    /* Center the content horizontally */
 }
 
 .hero__title {
@@ -1418,6 +1417,6 @@ textarea.input {
         /* Adjust spacing between title and text */
     }
     .hero__text {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 }
