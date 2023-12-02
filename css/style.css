@@ -107,17 +107,6 @@ nav {
     color: var(--color3);
     position: relative;
 }
-
-.menu li a::after {
-    content: "";
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--color4);
-    transition: 0.15s ease-in-out;
-}
 .menu ul li a::before{
     content: "";
     position: absolute;
@@ -724,7 +713,7 @@ hr {
 
 .header__about {
     text-align: left;
-    height: 500px;
+    height: 300px;
     position: relative;
     background-image: url(../images/abtheader.png);
     background-size: cover;  /* Ensure the image covers the entire container */
@@ -791,6 +780,7 @@ hr {
 
 .text_prog p {
     margin: 0;
+    color: white;
 }
 
 /* Media query for screens with a maximum width of 768px (typical for mobile) */

@@ -35,6 +35,48 @@
         </li>
     </ul>
 </div>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="images/LOGO.png" class="logo">
+        </div>
+        <div class="toggle">
+            <a href="#">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">About Us</a></i>
+                <li><a href="prog.html">Programmes</a></li>
+                <li><a href="oteam.html">Our Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+
+    </nav>
+</header>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $(".toggle a").on("click", function(e) {
+                e.preventDefault(); // Prevent the default behavior of the anchor link
+
+                if ($(".menu").hasClass("active")) {
+                    $(".menu").removeClass("active");
+                    $(this).html("<ion-icon name='menu-outline'></ion-icon>");
+                } else {
+                    $(".menu").addClass("active");
+                    $(this).html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            });
+        });
+    });
+</script>
+
+
 <!----====Contact form Starts=====-->
 <div class="contact__container">
     <span class="big__circle"></span>
