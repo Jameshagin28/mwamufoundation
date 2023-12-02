@@ -1340,7 +1340,7 @@ textarea.input {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(../images/progheader.jpg);
+    background-image: url(../images/progheader2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1358,8 +1358,9 @@ textarea.input {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    max-width: 80%;
-    margin: 0 auto; /* Center the content horizontally */
+    max-width: 75%;
+    margin: 0 auto;
+    /* Center the content horizontally */
 }
 
 .hero__title {
@@ -1369,26 +1370,54 @@ textarea.input {
 
 .hero__text {
     font-size: 1rem;
-    max-width: 100%; /* Ensure the text doesn't exceed the container width */
+    max-width: 100%;
+    /* Ensure the text doesn't exceed the container width */
     margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 578px) {
     .hero {
-        height: 100vh; /* Set a specific height for the background to remain visible */
+        height: 100vh;
+        /* Set a specific height for the background to remain visible */
     }
-    .hero__content{
+    .hero__content {
+        padding: 3rem;
+    }
+    .hero__title,
+    .hero__text {
+        display: block;
+        /* Display title and text as block elements (stacked) */
+    }
+    .hero__title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        /* Adjust spacing between title and text */
+    }
+    .hero__text {
+        font-size: 0.54rem;
+    }
+}
+/* Small Device Tablets$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .hero {
+        height: 100vh;
+        /* Set a specific height for the background to remain visible */
+    }
+    .hero__content {
         padding: 1rem;
     }
     .hero__title,
     .hero__text {
-        display: block; /* Display title and text as block elements (stacked) */
+        display: block;
+        /* Display title and text as block elements (stacked) */
     }
     .hero__title {
         font-size: 1.5rem;
-        margin-bottom: 0.5rem; /* Adjust spacing between title and text */
+        margin-bottom: 0.5rem;
+        /* Adjust spacing between title and text */
     }
     .hero__text {
-        font-size: 0.4rem;
+        font-size: 1.2rem;
     }
 }
