@@ -769,9 +769,9 @@ hr {
 /*Programmes header####*/
 .header__prog {
     text-align: left;
-    height: 500px;
+    height: 300px;
     position: relative;
-    background-image: url(../images/abtheader.png);
+    background-image: url(../images/slide-400.jpg);
     background-size: cover;  /* Ensure the image covers the entire container */
     background-position: center center;  /* Center the background image */
     padding: 100px;
