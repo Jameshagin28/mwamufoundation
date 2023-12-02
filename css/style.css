@@ -1379,6 +1379,7 @@ textarea.input {
 @media (max-width: 768px) {
     .hero__content {
         padding: 1rem;
+        max-width: 80%;
     }
     .hero__title {
         font-size: 1.5rem;
@@ -1398,6 +1399,7 @@ textarea.input {
     }
     .hero__content {
         padding: 3rem;
+        max-width: 80%;
     }
     .hero__title {
         font-size: 1.5rem;
@@ -1408,4 +1410,20 @@ textarea.input {
         font-size: 0.54rem;
     }
 }
+/* Additional Media Query for Phones with Height 1024px */
+
+@media (min-height: 1024px) {
+    .hero__content {
+        padding: 1rem;
+        max-width: 90%;
+        /* Adjust the maximum width as needed */
+    }
+    .hero__title {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+        /* Adjust spacing between title and text */
+    }
+    .hero__text {
+        font-size: 1rem;
+    }
 }
