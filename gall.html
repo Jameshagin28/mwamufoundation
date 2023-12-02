@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="The trusted community" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>about us </title>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <span><ion-icon name="call-outline"></ion-icon> +254708290201</span>
+        <ul>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/LOGO.png" class="logo">
+            </div>
+            <div class="toggle">
+                <a href="#">
+                    <i ion-icon name="menu-outline"></i>
+                    <ion-icon>
+                </a>
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about_us">About Us</a></i>
+                    <li><a href="prog.html">Programmes</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(function() {
+                $(".toggle a").on("click", function(e) {
+                    e.preventDefault(); // Prevent the default behavior of the anchor link
+
+                    if ($(".menu").hasClass("active")) {
+                        $(".menu").removeClass("active");
+                        $(this).html("<ion-icon name='menu-outline'></ion-icon>");
+                    } else {
+                        $(".menu").addClass("active");
+                        $(this).html("<ion-icon name='close-outline'></ion-icon>");
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+<div class="contain__gallery">
+    <div class="row__gallery">
+       <div class="neons col-12">
+          <h1><em>-UNDER DEVELOPMENT-</em></h1>
+       </div>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer>
+    <div class="row__footer">
+
+        <div class="col">
+            <img src="images/LOGO.png" class="logo__footer">
+            <p>Our mission is to empower students to create their own futures, and we are driven by the belief that every person should have the opportunity to study and work in an environment free from discrimination.
+            </p>
+        </div>
+        <div class="col">
+            <h3>Ofiice
+                <div class="underline"><span class="footer__span"></span></div>
+            </h3>
+            <p>Church Road</p>
+            <p>Kisumu Kenya</p>
+            <p>Kisumu baptist Collage,P.Box 1013,Kisumu </p>
+            <p class="email-id">mwalimujamesjaphethfoundation@gmail.com</p>
+            <h4>+254 - 0708290201</h4>
+        </div>
+        <div class="col">
+            <h3>Links
+                <div class="underline"><span  class="footer__span"></span></div>
+            </h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="prog.html">Programmes</a></li>
+                <li><a href="oteam.html">Our Team</a></li>
+                <li><a href="gall.html">Gallery</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter
+                <div class="underline"><span class="footer__span"></span></div>
+            </h3>
+            <form class="footer__form">
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Enter your email id" required class="contactus__input">
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons_footer">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Design by HAGIN © 2023- All Rights Reserved</p>
+</footer>
+</body>
+</html>
