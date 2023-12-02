@@ -1073,7 +1073,7 @@ hr {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 20px 1px rgba(0, 0, 0, 0.034);
-    z-index: 1000;
+    z-index: 998;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1167,7 +1167,7 @@ textarea.input {
     font-size: 0.9rem;
     font-weight: 500;
     pointer-events: none;
-    z-index: 1000;
+    z-index: 998;
     transition: 0.8s;
 }
 
