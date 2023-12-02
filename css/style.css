@@ -1450,6 +1450,7 @@ textarea.input {
     .hero__title {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
+        max-width: 80%;
         /* Adjust spacing between title and text */
     }
     .hero__text {
@@ -1464,7 +1465,7 @@ textarea.input {
         /* Set a specific height for the background to remain visible */
     }
     .hero__content {
-        padding: 3rem;
+        padding: 2rem;
         max-width: 80%;
     }
     .hero__title {
