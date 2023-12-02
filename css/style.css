@@ -168,9 +168,11 @@ nav {
     .menu.active,
     .toggle {
         display: block;
+        z-index: 999;
     }
     .toggle {
         display: block;
+        z-index: 999;
     }
 }
 /*END OF NAVIGATION#########*/
