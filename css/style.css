@@ -750,7 +750,49 @@ hr {
 }
 
 /*Programmes header####*/
+.header__prog {
+    text-align: left;
+    height: 500px;
+    position: relative;
+    background-image: url(../images/abtheader.png);
+    background-size: cover;  /* Ensure the image covers the entire container */
+    background-position: center center;  /* Center the background image */
+    padding: 100px;
+}
 
+.text_prog {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.text_prog h1 {
+    font-size: 45px;
+    color: goldenrod;
+    margin: 0;
+}
+
+.text_prog p {
+    margin: 0;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile) */
+@media (max-width: 768px) {
+    .header__prog {
+        height: auto;
+    }
+    .text_prog {
+        position: static;
+        text-align: left;
+        margin: 20px 0;
+        font-size: 20px;
+        /* Adjust font size as needed */
+    }
+    .text_prog h1 {
+        font-size: 30px;
+        /* Adjust font size as needed */
+    }
+}
 
 
 /*programmes#################################################*/
