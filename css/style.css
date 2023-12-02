@@ -173,15 +173,15 @@ nav {
     .menu.active,
     .toggle {
         display: block;
-        z-index: 999;
+        z-index: 1001;
     }
     .toggle {
         display: block;
-        z-index: 999;
+        z-index: 1001;
     }
     .toggle a{
         color: #000;
-        z-index: 1000;
+        z-index: 1001;
     }
 }
 /*END OF NAVIGATION#########*/
