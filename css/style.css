@@ -1360,6 +1360,7 @@ textarea.input {
     border-radius: 10px;
     max-width: 75%;
     margin: 0 auto;
+    /* Center the content horizontally */
 }
 
 .hero__title {
@@ -1373,19 +1374,30 @@ textarea.input {
     /* Ensure the text doesn't exceed the container width */
     margin: 0 auto;
 }
+/* Mobile View */
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
+    .hero__content {
+        padding: 1rem;
+    }
+    .hero__title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        /* Adjust spacing between title and text */
+    }
+    .hero__text {
+        font-size: 1.2rem;
+    }
+}
+/* Small Device Tablets */
+
+@media only screen and (max-width: 578px) {
     .hero {
         height: 100vh;
         /* Set a specific height for the background to remain visible */
     }
     .hero__content {
         padding: 3rem;
-    }
-    .hero__title,
-    .hero__text {
-        display: block;
-        /* Display title and text as block elements (stacked) */
     }
     .hero__title {
         font-size: 1.5rem;
@@ -1396,27 +1408,4 @@ textarea.input {
         font-size: 0.54rem;
     }
 }
-/* Small Device Tablets$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-    .hero {
-        height: 100vh;
-        /* Set a specific height for the background to remain visible */
-    }
-    .hero__content {
-        padding: 1rem;
-    }
-    .hero__title,
-    .hero__text {
-        display: block;
-        /* Display title and text as block elements (stacked) */
-    }
-    .hero__title {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-        /* Adjust spacing between title and text */
-    }
-    .hero__text {
-        font-size: 1.15rem;
-    }
 }
