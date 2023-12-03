@@ -64,7 +64,7 @@
             $(function() {
                 $(".toggle a").on("click", function(e) {
                     e.preventDefault();
-
+                    $(".menu").toggleClass("active");
                     var $menu = $(".menu");
 
 if ($menu.hasClass("active")) {
@@ -73,7 +73,7 @@ if ($menu.hasClass("active")) {
 } else {
     $menu.addClass("active");
     $(this).find("ion-icon").attr("name", "close-outline");
-    $(".menu").toggleClass("active");
+    
                     }
                 });
             });
