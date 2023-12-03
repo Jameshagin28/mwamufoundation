@@ -65,13 +65,13 @@
                 $(".toggle a").on("click", function(e) {
                     e.preventDefault();
 
-                    var $navbar = $(".navbar");
+                    var $menu = $(".menu");
 
-if ($navbar.hasClass("active")) {
-    $navbar.removeClass("active");
+if ($menu.hasClass("active")) {
+    $menu.removeClass("active");
     $(this).find("ion-icon").attr("name", "menu-outline");
 } else {
-    $navbar.addClass("active");
+    $menu.addClass("active");
     $(this).find("ion-icon").attr("name", "close-outline");
                     }
                 });
