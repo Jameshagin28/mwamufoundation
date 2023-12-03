@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>about us </title>
+    <title>About Us </title>
 </head>
 
 <body>
@@ -64,14 +64,17 @@
         $(document).ready(function() {
             $(function() {
                 $(".toggle a").on("click", function(e) {
-                    e.preventDefault(); // Prevent the default behavior of the anchor link
+                    e.preventDefault();
 
-                    if ($(".menu").hasClass("active")) {
-                        $(".menu").removeClass("active");
-                        $(this).html("<ion-icon name='menu-outline'></ion-icon>");
-                    } else {
-                        $(".menu").addClass("active");
-                        $(this).html("<ion-icon name='close-outline'></ion-icon>");
+                    var $menu = $(".menu");
+
+if ($menu.hasClass("active")) {
+    $menu.removeClass("active");
+    $(this).find("ion-icon").attr("name", "menu-outline");
+} else {
+    $menu.addClass("active");
+    $(this).find("ion-icon").attr("name", "close-outline");
+    $(".menu").toggleClass("active");
                     }
                 });
             });
@@ -84,9 +87,6 @@
             <p>Our mission is to empower students to create their own futures, and we are driven by the belief that every person should have the opportunity to study and work in an environment free from discrimination.</p>
         </div>
     </div>
-
-
-    <body>
         <div class="service__container container">
             <h1>Our Core Values</h1>
             <div class="row">
