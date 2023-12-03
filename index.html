@@ -63,14 +63,16 @@
         $(document).ready(function() {
             $(function() {
                 $(".toggle a").on("click", function(e) {
-                    e.preventDefault(); // Prevent the default behavior of the anchor link
+                    e.preventDefault();
 
-                    if ($(".menu").hasClass("active")) {
-                        $(".menu").removeClass("active");
-                        $(this).html("<ion-icon name='menu-outline'></ion-icon>");
-                    } else {
-                        $(".menu").addClass("active");
-                        $(this).html("<ion-icon name='close-outline'></ion-icon>");
+                    var $navbar = $(".navbar");
+
+if ($navbar.hasClass("active")) {
+    $navbar.removeClass("active");
+    $(this).find("ion-icon").attr("name", "menu-outline");
+} else {
+    $navbar.addClass("active");
+    $(this).find("ion-icon").attr("name", "close-outline");
                     }
                 });
             });
