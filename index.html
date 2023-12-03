@@ -46,7 +46,7 @@
                     <ion-icon name="menu-outline"></ion-icon>
                 </a>
             </div>
-
+    
             <ul class="menu">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="aboutus.html">About Us</a></i>
@@ -55,7 +55,7 @@
                     <li><a href="#gall.html">Gallery</a></li>
                     <li><a href="contactus.html">CONTACT US</a></li>
             </ul>
-
+    
         </nav>
     </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -63,23 +63,19 @@
         $(document).ready(function() {
             $(function() {
                 $(".toggle a").on("click", function(e) {
-                    e.preventDefault();
-                    $(".menu").toggleClass("active");
-                    var $menu = $(".menu");
-
-if ($menu.hasClass("active")) {
-    $menu.removeClass("active");
-    $(this).find("ion-icon").attr("name", "menu-outline");
-} else {
-    $menu.addClass("active");
-    $(this).find("ion-icon").attr("name", "close-outline");
+                    e.preventDefault(); // Prevent the default behavior of the anchor link
     
+                    if ($(".menu").hasClass("active")) {
+                        $(".menu").removeClass("active");
+                        $(this).html("<ion-icon name='menu-outline'></ion-icon>");
+                    } else {
+                        $(".menu").addClass("active");
+                        $(this).html("<ion-icon name='close-outline'></ion-icon>");
                     }
                 });
             });
         });
     </script>
-
 
     <section class="slide_container">
         <div class="slider-wrapper">
